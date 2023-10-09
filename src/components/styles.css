@@ -1,13 +1,11 @@
-/* Общий стиль для внешнего контейнера */
 .outer-container {
   width: 300px;
   margin: 20px auto;
   background-color: #fff;
   border-radius: 10px;
-  overflow: hidden; /* Это скроет скругленные углы внутренних элементов */
+  overflow: hidden;
 }
 
-/* Стиль для внутреннего контейнера каждой секции */
 .inner-container {
   border: 1px solid #e0e0e0;
   border-radius: 10px;
@@ -15,13 +13,11 @@
   box-sizing: border-box;
 }
 
-/* Убираем верхнюю границу и верхний отступ у второй секции */
 .inner-container + .inner-container {
   border-top: none;
   padding-top: 0;
 }
 
-/* Стили для секции Profile */
 .profile .description {
   display: flex;
   flex-direction: column;
@@ -46,7 +42,6 @@
   width: 100%;
 }
 
-/* Стили для секции Statistics */
 .statistics .stat-list {
   display: flex;
   gap: 0;
