@@ -1,0 +1,44 @@
+/* Общие стили для секции statistics */
+.statistics {
+  width: 300px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  border: 1px solid #e0e0e0; /* Добавляем общую границу вокруг секции */
+  border-radius: 10px; /* Округляем углы */
+}
+
+/* Стили для списка и элементов списка */
+.stat-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 0; /* Убираем отступы между элементами */
+}
+
+.item {
+  background-color: #f7f7f7; /* или функция для генерации случайного цвета */
+  border-radius: 8px; /* Округляем углы */
+  padding: 10px;
+  flex: 1; /* Устанавливаем flex: 1, чтобы блоки растягивались и были одного размера */
+  text-align: center;
+}
+
+/* Стили для текста в элементах списка */
+.label,
+.percentage {
+  display: block;
+  margin: 2px 0; /* Устанавливаем отступы в соответствии с вашими предпочтениями */
+}
+
+.label {
+  font-size: 14px;
+}
+
+.percentage {
+  font-size: 18px;
+  font-weight: bold;
+}

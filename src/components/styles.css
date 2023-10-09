@@ -1,0 +1,70 @@
+/* Общий стиль для внешнего контейнера */
+.outer-container {
+  width: 300px;
+  margin: 20px auto;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden; /* Это скроет скругленные углы внутренних элементов */
+}
+
+/* Стиль для внутреннего контейнера каждой секции */
+.inner-container {
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Убираем верхнюю границу и верхний отступ у второй секции */
+.inner-container + .inner-container {
+  border-top: none;
+  padding-top: 0;
+}
+
+/* Стили для секции Profile */
+.profile .description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile .avatar {
+  width: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.profile .name,
+.profile .tag,
+.profile .location {
+  margin: 5px 0;
+}
+
+.profile .stats {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* Стили для секции Statistics */
+.statistics .stat-list {
+  display: flex;
+  gap: 0;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.statistics .item {
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  padding: 10px;
+  flex: 1;
+  text-align: center;
+}
+
+.statistics .label,
+.statistics .percentage {
+  display: block;
+  margin: 2px 0;
+}
